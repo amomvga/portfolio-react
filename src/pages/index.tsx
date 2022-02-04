@@ -1,6 +1,6 @@
 import { Box, Flex, Text } from "@chakra-ui/react";
 import { Header } from "../components/Header";
-import homeImg from "../Assets/home-main.svg";
+import homeImg from "../assets/home-main.svg";
 import Image from "next/image";
 
 function Home() {
