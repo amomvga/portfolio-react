@@ -7,7 +7,7 @@ function About() {
       <Flex as="header" w="100%" h="100%">
         <Header />
       </Flex>
-      <Flex mr="20rem" ml="20rem" mt="15rem" >
+      <Flex h="80vh" mr="5rem" ml="5rem"   align="center" justify="center" >
         <Box>
           <Text fontSize="xx-large" p="4">Um pouco sobre mim...</Text>
           <Text fontSize="x-large" p="4">
