@@ -7,7 +7,10 @@ export function Logo() {
         &lt;
       </Text>
       <Text mt="2" fontSize="xx-large">
-        Amom Augusto
+        Amom Augusto 
+      </Text>
+      <Text color="pink.500" fontSize="xxx-large">
+      &nbsp;/
       </Text>
       <Text color="pink.500" fontSize="xxx-large">
         &gt;
