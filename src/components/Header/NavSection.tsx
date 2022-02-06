@@ -7,7 +7,6 @@ export function NavSection() {
       <NavLinks href="/">Home</NavLinks>
       <NavLinks href="/about">About</NavLinks>
       <NavLinks href="/projects">Projects</NavLinks>
-      <NavLinks href="/">Resume</NavLinks>
     </Flex>
   );
 }

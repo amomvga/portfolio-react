@@ -8,7 +8,7 @@ interface NavLinksProps {
 
 export function NavLinks({ children, href}: NavLinksProps) {
   return (
-    <Flex alignItems="center">
+    <Flex>
       <Link href={href}>
         <Text cursor="pointer" m="4">
           {children}
