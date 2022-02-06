@@ -1,20 +1,17 @@
-import {
-  Flex,
-  Text,
-  Link as ChakraLink,
-  LinkProps as chakraLinkProps,
-} from "@chakra-ui/react";
+import { Flex, Text } from "@chakra-ui/react";
+import Link  from "next/link";
 
-interface NavLinksProps extends chakraLinkProps {
+interface NavLinksProps {
   children: string;
+  href: string;
 }
 
-export function NavLinks({ children, ...rest }: NavLinksProps) {
+export function NavLinks({ children, href, ...rest }: NavLinksProps) {
   return (
     <Flex alignItems="center">
-      <ChakraLink {...rest}>
+      <Link href={href} {...rest}>
         <Text p="4">{children}</Text>
-      </ChakraLink>
+      </Link>
     </Flex>
   );
 }

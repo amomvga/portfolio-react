@@ -16,11 +16,11 @@ function About() {
           </Text>
           <Text fontSize="x-large" p="4">
             Comecei a programar no fim de 2020 e virou um sonho seguir carreira
-            na área. Hoje faço técnologo em Desenvolvimento Web e meu objetivo é
+            na área. Hoje estou cursando técnologo em Desenvolvimento Web e meu objetivo é
             dominar React Native, Node.js e banco de dados relacionais e não
             relacionais, mas para isso estou estudando bastante javascript e API
             restfull para chegar no meu objetivo. No momento estou procurando
-            estagio como front-and ou back-and e muita vontade aprender.
+            estagio ou junior como front-and ou back-and e muita vontade aprender.
           </Text>
         </Box>
       </Flex>
