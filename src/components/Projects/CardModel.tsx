@@ -18,8 +18,18 @@ export function CardModel({
   urlTitle,
 }: CardModelProps) {
   return (
-    <Box maxW="sm" borderWidth="1px" borderRadius="lg" overflow="hidden" m="2">
-      <Image src={imgUrl} />
+    <Box
+      maxW="380px"
+      borderWidth="1px"
+      borderRadius="lg"
+      overflow="hidden"
+      m="2"
+      flexDirection="column"
+      alignItems="center"
+      display="flex"
+      h="100%"
+    >
+      <Image width={304} height={400} src={imgUrl} />
 
       <Box p="6">
         <Box
@@ -35,7 +45,7 @@ export function CardModel({
           <Text mt="5">{description}</Text>
         </Box>
         {!!url && (
-          <Box>
+          <Box mt="5">
             <Link href={url}>{urlTitle}</Link>
           </Box>
         )}

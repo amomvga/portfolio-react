@@ -5,8 +5,8 @@ import Image from "next/image";
 
 function Home() {
   return (
-    <Flex w="100%" h="100%" align="center" justify="center" direction="column">
-      <Flex as="header" w="100%" h="100%">
+    <Flex direction="column">
+      <Flex w="100%">
         <Header />
       </Flex>
       <Flex w="100vw" h="80vh" align="center" justify="center">

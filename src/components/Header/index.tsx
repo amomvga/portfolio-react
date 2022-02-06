@@ -5,7 +5,7 @@ import { NavSection } from "./NavSection";
 
 export function Header() {
   return (
-    <Flex w="100%" justify="space-between" ml="7%">
+    <Flex as="header" w="100%" justify="space-between" ml="7%">
       <Logo />
       <Flex justify="flex-end" mr="10%">
         <NavSection />
