@@ -20,7 +20,6 @@ export function CardModel({
   return (
     <Box
       maxW="380px"
-      borderWidth="1px"
       borderRadius="lg"
       overflow="hidden"
       m="2"
@@ -29,7 +28,7 @@ export function CardModel({
       display="flex"
       h="100%"
     >
-      <Image width={304} height={400} src={imgUrl} />
+      <Image width={204} height={300} src={imgUrl} />
 
       <Box p="6">
         <Box
@@ -45,8 +44,10 @@ export function CardModel({
           <Text mt="5">{description}</Text>
         </Box>
         {!!url && (
-          <Box mt="5">
-            <Link href={url}>{urlTitle}</Link>
+          <Box mt="5" color="purple.500">
+            <Link href={url}>
+              <a target="_blank">{urlTitle}</a>
+            </Link>
           </Box>
         )}
       </Box>

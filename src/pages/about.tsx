@@ -3,21 +3,21 @@ import { Header } from "../components/Header";
 
 function About() {
   return (
-    <Flex direction="column">
-      <Flex w="100%">
+    <Flex direction="column" w="100%" height="100vh">
+      <Flex>
         <Header />
       </Flex>
 
-      <Flex h="80vh" mr="5rem" ml="5rem" align="center" justify="center">
+      <Flex align="center" ml={["5px", "2rem"]} mt="50px">
         <Box>
-          <Text fontSize="xx-large" p="4">
+          <Text fontSize={["md", "xl", "2xl"]} p="1">
             Um pouco sobre mim...
           </Text>
-          <Text fontSize="x-large" p="4">
+          <Text fontSize={["md", "xl", "2xl"]} p="1">
             Olá, sou um desenvolvedor Jr a procura de uma primeira oportunidade
             para começar minha carreira.
           </Text>
-          <Text fontSize="x-large" p="4">
+          <Text fontSize={["md", "xl", "2xl"]} p="1">
             Comecei a programar no fim de 2020 e virou um sonho seguir carreira
             na área. Hoje estou cursando técnologo em Desenvolvimento Web e meu
             objetivo é dominar React Native, Node.js e banco de dados

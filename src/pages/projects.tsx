@@ -5,11 +5,11 @@ import { ProjectCard } from "../components/Projects/ProjectCard";
 export default function Projects() {
   return (
     <Flex direction="column" w="100%">
-      <Flex w="100%">
+      <Flex>
         <Header />
       </Flex>
 
-      <Flex w="100%">
+      <Flex>
         <ProjectCard />
       </Flex>
     </Flex>

@@ -56,8 +56,9 @@ export function Header() {
                 icon={<Icon as={RiMenuLine} />}
                 variant="unstyled"
                 onClick={handleOpenDrawer}
-                mr="4"
-                fontSize={30}
+                mr={["1","4"]}
+                mt="2"
+                fontSize={[20, 30]}
               />
 
               <Drawer

@@ -15,6 +15,8 @@ export function ProjectCard() {
         spacingX="10px"
         spacingY="20px"
         w="100%"
+        align="center"
+        mt="50px"
       >
         <Box>
           <CardModel
