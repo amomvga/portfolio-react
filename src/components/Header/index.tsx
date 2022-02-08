@@ -10,9 +10,8 @@ import {
   IconButton,
   useBreakpointValue,
 } from "@chakra-ui/react";
-import { useEffect } from "react";
+import { useState } from "react";
 import { RiMenuLine } from "react-icons/ri";
-// import { useHeaderDrawer } from "../../contexts/HeaderDrawerContext";
 import { Logo } from "./Logo";
 import { NavSection } from "./NavSection";
 
@@ -22,14 +21,15 @@ export function Header() {
     lg: false,
   });
 
-  var test = true;
+  const [openDrawer, setOpenDrawer] = useState(Boolean);
 
-
-  function disclosureDrawer() {
-    isOpen= false
+  function handleCloseDrawer() {
+    setOpenDrawer(false);
   }
 
-  // const { onOpen, onClose } = useHeaderDrawer();
+  function handleOpenDrawer() {
+    setOpenDrawer(true);
+  }
 
   return (
     <Flex w="100%" justify="space-between" justifyContent="center">
@@ -50,25 +50,31 @@ export function Header() {
               align="center"
             >
               <Logo />
+
+              <Drawer
+                isOpen={openDrawer}
+                placement="top"
+                onClose={handleCloseDrawer}
+              >
+                <DrawerOverlay>
+                  <DrawerContent bg="gray.800">
+                    <DrawerCloseButton mt="6" onClick={handleCloseDrawer} />
+                    <DrawerHeader>Navegação:</DrawerHeader>
+                    <DrawerBody>
+                      <NavSection />
+                    </DrawerBody>
+                  </DrawerContent>
+                </DrawerOverlay>
+              </Drawer>
+              <IconButton
+                aria-label="Open Navegation"
+                icon={<Icon as={RiMenuLine} />}
+                variant="unstyled"
+                onClick={handleOpenDrawer}
+                mr="4"
+                fontSize={30}
+              />
             </Flex>
-            <Drawer isOpen={false} placement="top" onClose={(isOpen)=>{ isOpen = true }}>
-              <DrawerOverlay>
-                <DrawerContent bg="gray.800">
-                  <DrawerCloseButton mt="6" onClick={disclosureDrawer} />
-                  <DrawerHeader>Navegação:</DrawerHeader>
-                  <DrawerBody>
-                    <NavSection />
-                  </DrawerBody>
-                </DrawerContent>
-              </DrawerOverlay>
-            </Drawer>
-            <IconButton
-              aria-label="Open Navegation"
-              icon={<Icon as={RiMenuLine} />}
-              variant="unstyled"
-              onClick={disclosureDrawer}
-              mr="2"
-            />
           </Flex>
         ) : (
           <Flex w="100%" justify="space-between" justifyContent="center">
