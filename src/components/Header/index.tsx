@@ -51,6 +51,15 @@ export function Header() {
             >
               <Logo />
 
+              <IconButton
+                aria-label="Open Navegation"
+                icon={<Icon as={RiMenuLine} />}
+                variant="unstyled"
+                onClick={handleOpenDrawer}
+                mr="4"
+                fontSize={30}
+              />
+
               <Drawer
                 isOpen={openDrawer}
                 placement="top"
@@ -66,14 +75,6 @@ export function Header() {
                   </DrawerContent>
                 </DrawerOverlay>
               </Drawer>
-              <IconButton
-                aria-label="Open Navegation"
-                icon={<Icon as={RiMenuLine} />}
-                variant="unstyled"
-                onClick={handleOpenDrawer}
-                mr="4"
-                fontSize={30}
-              />
             </Flex>
           </Flex>
         ) : (

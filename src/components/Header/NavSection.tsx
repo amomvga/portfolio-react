@@ -3,7 +3,7 @@ import { NavLinks } from "./NavLinks";
 
 export function NavSection() {
   return (
-    <Flex>
+    <Flex mr="5">
       <NavLinks href="/">Home</NavLinks>
       <NavLinks href="/about">About</NavLinks>
       <NavLinks href="/projects">Projects</NavLinks>

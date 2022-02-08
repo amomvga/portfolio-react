@@ -6,7 +6,7 @@ interface NavLinksProps {
   href: string;
 }
 
-export function NavLinks({ children, href}: NavLinksProps) {
+export function NavLinks({ children, href }: NavLinksProps) {
   return (
     <Flex>
       <Link href={href}>
