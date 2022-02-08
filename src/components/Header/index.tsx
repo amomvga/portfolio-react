@@ -68,8 +68,7 @@ export function Header() {
               >
                 <DrawerOverlay>
                   <DrawerContent bg="gray.800">
-                    <DrawerCloseButton mt="6" onClick={handleCloseDrawer} />
-                    <DrawerHeader>Navegação:</DrawerHeader>
+                    <DrawerCloseButton mt="3" onClick={handleCloseDrawer} />
                     <DrawerBody>
                       <NavSection />
                     </DrawerBody>
