@@ -44,7 +44,7 @@ export function CardModel({
           <Text mt="5">{description}</Text>
         </Box>
         {!!url && (
-          <Box mt="5" color="purple.500">
+          <Box mt="5" color="pink.500">
             <Link href={url}>
               <a target="_blank">{urlTitle}</a>
             </Link>

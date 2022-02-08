@@ -6,11 +6,11 @@ export function Logo() {
       <Text color="pink.500" fontSize={["2xl", "xxx-large"]}>
         &lt;
       </Text>
-      <Text mt="2" fontSize={["lg", "xx-large"]}>
-        Amom Augusto 
+      <Text mt={["0", "2"]} fontSize={["lg", "xx-large"]}>
+        Amom Augusto
       </Text>
       <Text color="pink.500" fontSize={["xl", "xxx-large"]}>
-      &nbsp;/
+        &nbsp;/
       </Text>
       <Text color="pink.500" fontSize={["2xl", "xxx-large"]}>
         &gt;
