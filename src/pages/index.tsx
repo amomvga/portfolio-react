@@ -56,6 +56,7 @@ function Home() {
               _hover={{ color: "purple.700" }}
               href="https://www.linkedin.com/in/amom-augusto-873116202"
               target="_blank"
+              _focus={{ border: "none" }}
             >
               <Icon as={RiLinkedinBoxFill} />
             </Link>
@@ -64,6 +65,7 @@ function Home() {
               _hover={{ color: "purple.700" }}
               href="https://github.com/amomvga"
               target="_blank"
+              _focus={{ border: "none" }}
             >
               <Icon as={RiGithubFill} />
             </Link>

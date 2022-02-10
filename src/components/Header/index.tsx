@@ -56,7 +56,8 @@ export function Header() {
                 icon={<Icon as={RiMenuLine} />}
                 variant="unstyled"
                 onClick={handleOpenDrawer}
-                mr={["1","4"]}
+                _focus={{ border: "none" }}
+                mr={["1", "4"]}
                 mt="2"
                 fontSize={[20, 30]}
               />
@@ -68,7 +69,11 @@ export function Header() {
               >
                 <DrawerOverlay>
                   <DrawerContent bg="gray.800">
-                    <DrawerCloseButton mt="3" onClick={handleCloseDrawer} />
+                    <DrawerCloseButton
+                      mt="3"
+                      onClick={handleCloseDrawer}
+                      _focus={{ border: "none" }}
+                    />
                     <DrawerBody>
                       <NavSection />
                     </DrawerBody>
