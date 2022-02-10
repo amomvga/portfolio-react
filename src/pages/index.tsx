@@ -6,6 +6,7 @@ import {
   SimpleGrid,
   Text,
   Link,
+  Icon,
 } from "@chakra-ui/react";
 import { Header } from "../components/Header";
 import homeImg from "../assets/home-main.svg";
@@ -51,15 +52,21 @@ function Home() {
         <Flex>
           <HStack spacing="2">
             <Link
-              as={RiLinkedinBoxFill}
               fontSize={["2xl", "4xl"]}
               _hover={{ color: "purple.700" }}
-            />
+              href="https://www.linkedin.com/in/amom-augusto-873116202"
+              target="_blank"
+            >
+              <Icon as={RiLinkedinBoxFill} />
+            </Link>
             <Link
-              as={RiGithubFill}
               fontSize={["2xl", "4xl"]}
               _hover={{ color: "purple.700" }}
-            />
+              href="https://github.com/amomvga"
+              target="_blank"
+            >
+              <Icon as={RiGithubFill} />
+            </Link>
           </HStack>
         </Flex>
       </Flex>
